@@ -28,8 +28,6 @@ export default function Home() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  console.log(data)
-
   const getData = async () => {
     setLoading(true);
     try {
