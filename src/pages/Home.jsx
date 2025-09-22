@@ -23,6 +23,7 @@ import { Link } from "react-router-dom";
 import ResumeDownload from "@/components/ui/ResumeDownload";
 import LoadingSpinner from "@/components/ui/LoadingSpinner";
 import { toaster } from "@/components/ui/toaster";
+import img from '../assets/img.PNG'
 
 export default function Home() {
   const [data, setData] = useState([]);
@@ -73,7 +74,7 @@ export default function Home() {
                 <HStack gap={5} align="center">
                   <Image
                     alt="UD img"
-                    src={data?.profile_img}
+                    src={data?.profile_img || img}
                     h={{ base: "250px", sm: "300px", md: "400px" }}
                     bg="blue.100"
                     p="20px"
@@ -158,7 +159,7 @@ export default function Home() {
               </Text>
 
               <Flex justify={"space-between"} gap={2} w={"100%"}>
-                <ResumeDownload resumeUrl={data?.resume} />
+                <ResumeDownload />
                 <Button
                   as={Link}
                   to="/education"

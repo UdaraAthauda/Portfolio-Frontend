@@ -184,7 +184,7 @@ export default function Contact() {
                 </HStack>
               </Card.Body>
               <Stack gap={3} w="100%">
-                <ResumeDownload resumeUrl={contactDetails?.resume} />
+                <ResumeDownload />
                 <Button as={Link} to="/" variant="subtle" w="100%">
                   <MdOutlineHome /> Back to Home
                 </Button>
