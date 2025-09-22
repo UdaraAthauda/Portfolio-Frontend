@@ -11,8 +11,6 @@ export default function ResumeDownload() {
       download="Udara_Athauda_Resume.pdf"
       variant={"subtle"}
       colorPalette={"purple"}
-      loading={loading}
-      loadingText="Downloading..."
     >
       <RxDownload /> Download Resume
     </Button>
