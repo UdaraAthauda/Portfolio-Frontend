@@ -16,6 +16,7 @@ import api from "../../api";
 import { FaGithub, FaArrowRight, FaLaptopCode } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import LoadingSpinner from "@/components/ui/LoadingSpinner";
+import img from '../assets/tech.png'
 
 export default function Projects() {
   const [projectData, setProjectData] = useState([]);
@@ -81,7 +82,7 @@ export default function Projects() {
                   }}
                 >
                   <Image
-                    src={project.image}
+                    src={project?.image || img}
                     alt={project.name}
                     objectFit="cover"
                     maxH="250px"
